@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<title>3D모형</title>
+</head>
+  
+<body>
+	<div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
+		<figure class="product-viewer">
+			<img class="loading-img" src="img/img-loading.jpg" alt="loading-img">
+			<!-- <div class="iso__desc"><img src="img/icon__rotate-screen.svg" style="width: 20%;" alt=""><p>화면위에서 마우스 드래그 혹은 터치로 움직여주세요.</p></div> -->
+			<div class="product-sprite" data-image="img/img-sprite.png"></div>
+
+			<button class="bubble" id="purple-bubble"><img src="img/의왕시청말풍선.png" id="purple-bubble-img"
+					alt="의왕시청 말풍선"></button>
+			<button class="bubble" id="yellow-bubble"><img src="img/공동주택용지말풍선.png" id="yellow-bubble-img"
+					alt="공동주택용지 말풍선"></button>
+			<button class="bubble" id="blue-bubble"><img src="img/초등학교예정지말풍선.png" id="blue-bubble-img"
+					alt="초등학교예정지 말풍선"></button>
+
+			<div id="bubble-modal1">
+				<img src="https://blog.kakaocdn.net/dn/yy7NW/btqEsq7de5M/nkSf2eHdVjC3ySjNc7I4H0/img.jpg" alt="의왕시청 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="bubble-modal2">
+				<img src="img/zipview_logo.svg" alt="공동주택용지 모달"
+					style="width: 10%; padding-top: 25%; padding-bottom: 25%; padding-left: 45%; padding-right: 45%;">
+				<button class="modal_close_btn" style="color: black;">×</button>
+			</div>
+			<div id="bubble-modal3">
+				<img src="img/zipview_logo.svg" alt="초등학교예정지 모달"
+					style="width: 10%; padding-top: 25%; padding-bottom: 25%; padding-left: 45%; padding-right: 45%;">
+				<button class="modal_close_btn" style="color: black;">×</button>
+			</div>
+
+			<div class="pin-group1">
+				<button class="pin" id="skybridge-pin"><img src="img/vil_image_point_hover.png" id="skybridge-pin"
+						alt="스카이브릿지 핀"></button>
+				<button class="pin" id="terracehouse-pin"><img src="img/vil_image_point_hover.png" id="terracehouse-pin"
+						alt="테라스하우스 핀"></button>
+				<button class="pin" id="moonju-pin"><img src="img/vil_image_point_hover.png" id="moonju-pin"
+						alt="문주 핀"></button>
+				<button class="pin" id="livingfacilities-pin"><img src="img/vil_image_point_hover.png"
+						id="livingfacilities-pin" alt="근린생활시설 핀"></button>
+			</div>
+			<div class="pin-group2">
+				<button class="pin" id="guesthouse-pin"><img src="img/vil_image_point_hover.png" id="guesthouse-pin"
+						alt="게스트하우스 핀"></button>
+				<button class="pin" id="fitness-pin"><img src="img/vil_image_point_hover.png" id="fitness-pin"
+						alt="피트니스 핀"></button>
+				<button class="pin" id="sunken-pin"><img src="img/vil_image_point_hover.png" id="sunken-pin"
+						alt="선큰 핀"></button>
+				<button class="pin" id="kindergarten-pin"><img src="img/vil_image_point_hover.png" id="kindergarten-pin"
+						alt="어린이집 핀"></button>
+			</div>
+			<div class="pin-group3">
+				<button class="pin" id="playground-pin"><img src="img/vil_image_point_hover.png" id="playground-pin"
+						alt="놀이터 핀"></button>
+			</div>
+
+
+			<div class="line-group1">
+				<img class="line" id="skybridge-line" src="img/line/skybridge_line.png" alt="스카이브릿지 라인">
+				<img class="line" id="terracehouse-line" src="img/line/terracehouse_line.png" alt="테라스하우스 라인">
+				<img class="line" id="moonju-line" src="img/line/moonju_line.png" alt="문주 라인">
+				<img class="line" id="livingfacilities-line" src="img/line/livingfacilities_line.png" alt="근린생활시설 라인">
+			</div>
+			<div class="line-group2">
+				<img class="line" id="guesthouse-line" src="img/line/guesthouse_line.png" alt="게스트하우스 라인">
+				<img class="line" id="fitness-line" src="img/line/fitness_line.png" alt="피트니스 라인">
+				<img class="line" id="sunken-line" src="img/line/sunken_line.png" alt="선큰 라인">
+				<img class="line" id="kindergarten-line" src="img/line/kindergarten_line.png" alt="어린이집 라인">
+			</div>
+			<div class="line-group3">
+				<img class="line" id="playground-line" src="img/line/playground_line.png" alt="놀이터 라인">
+			</div>
+
+
+			<div id="skybridge-modal">
+				<img src="img/modal/skybridge_modal.png" alt="스카이브릿지 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="terracehouse-modal">
+				<img src="img/modal/terracehouse_modal.png" alt="테라스하우스 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="moonju-modal">
+				<img src="img/modal/moonju_modal.png" alt="문주 모달"
+					style="width: 100%; height: 100%;; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="livingfacilities-modal">
+				<img src="img/modal/livingfacilities_modal.png" alt="근린생활시설 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="guesthouse-modal">
+				<img src="img/modal/guesthouse_modal.png" alt="게스트하우스 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="fitness-modal">
+				<img src="img/modal/fitness_modal.png" alt="피트니스 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="sunken-modal">
+				<img src="img/modal/sunken_modal.png" alt="선큰 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="kindergarten-modal">
+				<img src="img/modal/kindergarten_modal.png" alt="어린이집 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+			<div id="playground-modal">
+				<img src="img/modal/playground_modal.png" alt="놀이터 모달"
+					style="width: 100%; height: 100%; border-radius: 5px;">
+				<button class="modal_close_btn">×</button>
+			</div>
+		</figure> <!-- .product-viewer -->
+	</div> <!-- .cd-product-viewer-wrapper -->
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/jquery.mobile.custom.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+
+</html>
